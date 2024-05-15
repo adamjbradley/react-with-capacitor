@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import { WebAuthn } from '@darkedges/capacitor-native-webauthn';
 
-import * as React from "react";
+//import * as React from "react";
+import { useState } from 'react';
 import * as ReactDOM from "react-dom/client";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
@@ -10,12 +10,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Home from './Home';
 import About from './About';
 import Share from './ShareSheet';
+import Passkeys from './Passkeys';
 
 function App() {
-
-  const passkey = async () => {
-    return await WebAuthn.isWebAuthnAvailable();
-  }
 
   const RouteProvider = () => {
     const routes = [
@@ -26,7 +23,12 @@ function App() {
         {
             path: '/about',
             element: <About />,
-        }
+        },
+        {
+          path: '/passkeys',
+          element: <Passkeys />,
+      }
+
     ];
     return <RouterProvider router={createBrowserRouter(routes)} />;
   };

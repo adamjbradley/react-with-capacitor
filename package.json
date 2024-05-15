@@ -7,6 +7,7 @@
     "@capacitor/android": "^6.0.0",
     "@capacitor/cli": "^6.0.0",
     "@capacitor/core": "^6.0.0",
+    "@capacitor/device": "^6.0.0",
     "@capacitor/ios": "^6.0.0",
     "@capacitor/share": "^6.0.0",
     "@darkedges/capacitor-native-webauthn": "github:adamjbradley/capacitor-native-webauthn",
