@@ -1,4 +1,7 @@
 PODS:
+  - AdamjbradleyCapacitorNativeWebauthn (0.0.5):
+    - base64url (~> 1.0)
+    - Capacitor
   - base64url (1.1.0)
   - Capacitor (6.0.0):
     - CapacitorCordova
@@ -9,23 +12,22 @@ PODS:
     - Capacitor
   - CapacitorShare (6.0.0):
     - Capacitor
-  - DarkedgesCapacitorNativeWebauthn (0.0.2):
-    - base64url (~> 1.0)
-    - Capacitor
 
 DEPENDENCIES:
+  - "AdamjbradleyCapacitorNativeWebauthn (from `../../node_modules/@adamjbradley/capacitor-native-webauthn`)"
   - "Capacitor (from `../../node_modules/@capacitor/ios`)"
   - "CapacitorActionSheet (from `../../node_modules/@capacitor/action-sheet`)"
   - "CapacitorCordova (from `../../node_modules/@capacitor/ios`)"
   - "CapacitorDevice (from `../../node_modules/@capacitor/device`)"
   - "CapacitorShare (from `../../node_modules/@capacitor/share`)"
-  - "DarkedgesCapacitorNativeWebauthn (from `../../node_modules/@darkedges/capacitor-native-webauthn`)"
 
 SPEC REPOS:
   trunk:
     - base64url
 
 EXTERNAL SOURCES:
+  AdamjbradleyCapacitorNativeWebauthn:
+    :path: "../../node_modules/@adamjbradley/capacitor-native-webauthn"
   Capacitor:
     :path: "../../node_modules/@capacitor/ios"
   CapacitorActionSheet:
@@ -36,18 +38,16 @@ EXTERNAL SOURCES:
     :path: "../../node_modules/@capacitor/device"
   CapacitorShare:
     :path: "../../node_modules/@capacitor/share"
-  DarkedgesCapacitorNativeWebauthn:
-    :path: "../../node_modules/@darkedges/capacitor-native-webauthn"
 
 SPEC CHECKSUMS:
+  AdamjbradleyCapacitorNativeWebauthn: 3069b897260dba4e91d72ee09d69b2e54f0bcf71
   base64url: 92e81bb256f2070359a34fc93a7a7d4b9a9d689f
   Capacitor: 559d073c4ca6c27f8e7002c807eea94c3ba435a9
   CapacitorActionSheet: de123f478f394373f84a96614ce2b1a6c30253e4
   CapacitorCordova: 8c4bfdf69368512e85b1d8b724dd7546abeb30af
   CapacitorDevice: f8fd88f9edd1261c55a109f32015b09bbbfdc4a0
   CapacitorShare: a771200d3b924a5d7ad9d9fecbac517e4c0aa74f
-  DarkedgesCapacitorNativeWebauthn: 5431c460859af16b19d97a54b54cf690f63d1afd
 
-PODFILE CHECKSUM: 16ca858d1d7deb2af58ca7923daa0cdb2b4746fb
+PODFILE CHECKSUM: 3f4e8c74e15fe23695f1070197453eceaa246fe8
 
 COCOAPODS: 1.15.2

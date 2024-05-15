@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@adamjbradley/capacitor-native-webauthn": "^0.0.5",
     "@capacitor/action-sheet": "^6.0.0",
     "@capacitor/android": "^6.0.0",
     "@capacitor/cli": "^6.0.0",
@@ -10,7 +11,6 @@
     "@capacitor/device": "^6.0.0",
     "@capacitor/ios": "^6.0.0",
     "@capacitor/share": "^6.0.0",
-    "@darkedges/capacitor-native-webauthn": "github:adamjbradley/capacitor-native-webauthn",
     "@ionic/react": "^8.1.1",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

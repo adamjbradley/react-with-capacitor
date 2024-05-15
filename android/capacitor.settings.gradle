@@ -2,6 +2,9 @@
 include ':capacitor-android'
 project(':capacitor-android').projectDir = new File('../node_modules/@capacitor/android/capacitor')
 
+include ':adamjbradley-capacitor-native-webauthn'
+project(':adamjbradley-capacitor-native-webauthn').projectDir = new File('../node_modules/@adamjbradley/capacitor-native-webauthn/android')
+
 include ':capacitor-action-sheet'
 project(':capacitor-action-sheet').projectDir = new File('../node_modules/@capacitor/action-sheet/android')
 
@@ -10,6 +13,3 @@ project(':capacitor-device').projectDir = new File('../node_modules/@capacitor/d
 
 include ':capacitor-share'
 project(':capacitor-share').projectDir = new File('../node_modules/@capacitor/share/android')
-
-include ':darkedges-capacitor-native-webauthn'
-project(':darkedges-capacitor-native-webauthn').projectDir = new File('../node_modules/@darkedges/capacitor-native-webauthn/android')

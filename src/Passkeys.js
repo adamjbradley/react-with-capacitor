@@ -3,7 +3,7 @@ import React from 'react';
 import { useState } from 'react';
 import { useReducer } from 'react';
 
-import { WebAuthn } from '@darkedges/capacitor-native-webauthn';
+import { WebAuthn } from '@adamjbradley/capacitor-native-webauthn';
 import { Device } from '@capacitor/device';
 
 async function Passkeys() {
@@ -26,7 +26,7 @@ async function Passkeys() {
         const isCharging = chargingInfo.isCharging;
         return isCharging;
     };
-
+    
     const passkeyInfo = async () => {
         const webauthnEnabled = await WebAuthn.isWebAuthnAvailable();                
         return webauthnEnabled;

@@ -9,10 +9,10 @@ android {
 
 apply from: "../capacitor-cordova-android-plugins/cordova.variables.gradle"
 dependencies {
+    implementation project(':adamjbradley-capacitor-native-webauthn')
     implementation project(':capacitor-action-sheet')
     implementation project(':capacitor-device')
     implementation project(':capacitor-share')
-    implementation project(':darkedges-capacitor-native-webauthn')
 
 }
 

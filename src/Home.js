@@ -10,7 +10,7 @@ import { IonButton, IonDatetime } from '@ionic/react';
 import { setupIonicReact } from '@ionic/react';
 import Passkeys from './Passkeys.js';
 
-import { WebAuthn } from '@darkedges/capacitor-native-webauthn';
+import { WebAuthn } from '@adamjbradley/capacitor-native-webauthn';
 import { Device } from '@capacitor/device';
 
 function Home() {
@@ -24,34 +24,31 @@ function Home() {
     const logBatteryInfo = async () => {
         const batteryInfo = await Device.getBatteryInfo();
         const batteryLevel = batteryInfo.batteryLevel;
-        console.log('Battery level: ', batteryLevel*100, '%');
         return batteryLevel;
     };
-
+    
     const chargingInfo = async () => {
-        const chargingInfo = await Device.getBatteryInfo();
-        console.log('Is charging?: ', chargingInfo.isCharging);
-        console.log(chargingInfo.isCharging);
-        const isCharging = chargingInfo.isCharging;
-        return isCharging;
-    };
+        const chargingInfo = await Device.getBatteryInfo();        
+        return chargingInfo.isCharging;        
+    };    
 
     const passkeyInfo = async () => {
-        const webauthnEnabled = await WebAuthn.isWebAuthnAvailable();                
+        const webauthnEnabled = await WebAuthn.isWebAuthnAvailable();        
         return webauthnEnabled;
     }
     
     logBatteryInfo().then( result => {
-        level.batteryLevel = result*100;        
+        console.log('Battery level: ', result*100, '%');
+        level.batteryLevel = result*100;
     });
 
     chargingInfo().then( result => {
-        console.log("Finally, the result!" + result)
-        charging.isCharging = result;      
+        console.log('Is the battery charging?:', result);
+        charging.isCharging = result;
     });
 
     passkeyInfo().then( result => {
-        console.log("Finally, the Passkey result!" + JSON.stringify(result))        
+        console.log('Is Passkey enabled?:', result);
         passkey.isPasskeyEnabled = result;
     });
     
