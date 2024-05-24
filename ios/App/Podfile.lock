@@ -1,10 +1,10 @@
 PODS:
-  - AdamjbradleyCapacitorNativeWebauthn (0.0.5):
-    - base64url (~> 1.0)
-    - Capacitor
   - base64url (1.1.0)
   - Capacitor (6.0.0):
     - CapacitorCordova
+  - capacitor-native-webauthn (0.0.9):
+    - base64url (~> 1.0)
+    - Capacitor
   - CapacitorActionSheet (6.0.0):
     - Capacitor
   - CapacitorCordova (6.0.0)
@@ -14,8 +14,8 @@ PODS:
     - Capacitor
 
 DEPENDENCIES:
-  - "AdamjbradleyCapacitorNativeWebauthn (from `../../node_modules/@adamjbradley/capacitor-native-webauthn`)"
   - "Capacitor (from `../../node_modules/@capacitor/ios`)"
+  - "capacitor-native-webauthn (from `../../node_modules/@adamjbradley/capacitor-native-webauthn`)"
   - "CapacitorActionSheet (from `../../node_modules/@capacitor/action-sheet`)"
   - "CapacitorCordova (from `../../node_modules/@capacitor/ios`)"
   - "CapacitorDevice (from `../../node_modules/@capacitor/device`)"
@@ -26,10 +26,10 @@ SPEC REPOS:
     - base64url
 
 EXTERNAL SOURCES:
-  AdamjbradleyCapacitorNativeWebauthn:
-    :path: "../../node_modules/@adamjbradley/capacitor-native-webauthn"
   Capacitor:
     :path: "../../node_modules/@capacitor/ios"
+  capacitor-native-webauthn:
+    :path: "../../node_modules/@adamjbradley/capacitor-native-webauthn"
   CapacitorActionSheet:
     :path: "../../node_modules/@capacitor/action-sheet"
   CapacitorCordova:
@@ -40,14 +40,14 @@ EXTERNAL SOURCES:
     :path: "../../node_modules/@capacitor/share"
 
 SPEC CHECKSUMS:
-  AdamjbradleyCapacitorNativeWebauthn: 3069b897260dba4e91d72ee09d69b2e54f0bcf71
   base64url: 92e81bb256f2070359a34fc93a7a7d4b9a9d689f
   Capacitor: 559d073c4ca6c27f8e7002c807eea94c3ba435a9
+  capacitor-native-webauthn: a88d139d5d1c0f2b219cfeaf4ed1df0dde651d40
   CapacitorActionSheet: de123f478f394373f84a96614ce2b1a6c30253e4
   CapacitorCordova: 8c4bfdf69368512e85b1d8b724dd7546abeb30af
   CapacitorDevice: f8fd88f9edd1261c55a109f32015b09bbbfdc4a0
   CapacitorShare: a771200d3b924a5d7ad9d9fecbac517e4c0aa74f
 
-PODFILE CHECKSUM: 3f4e8c74e15fe23695f1070197453eceaa246fe8
+PODFILE CHECKSUM: 500b54237efe2516ad12c1b522f50d79718379a3
 
 COCOAPODS: 1.15.2

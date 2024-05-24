@@ -11,7 +11,7 @@ install! 'cocoapods', :disable_input_output_paths => true
 def capacitor_pods
   pod 'Capacitor', :path => '../../node_modules/@capacitor/ios'
   pod 'CapacitorCordova', :path => '../../node_modules/@capacitor/ios'
-  pod 'AdamjbradleyCapacitorNativeWebauthn', :path => '../../node_modules/@adamjbradley/capacitor-native-webauthn'
+  pod 'capacitor-native-webauthn', :path => '../../node_modules/@adamjbradley/capacitor-native-webauthn'
   pod 'CapacitorActionSheet', :path => '../../node_modules/@capacitor/action-sheet'
   pod 'CapacitorDevice', :path => '../../node_modules/@capacitor/device'
   pod 'CapacitorShare', :path => '../../node_modules/@capacitor/share'

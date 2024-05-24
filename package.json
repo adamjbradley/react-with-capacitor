@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@adamjbradley/capacitor-native-webauthn": "^0.0.5",
+    "@adamjbradley/capacitor-native-webauthn": "^0.0.9",
     "@capacitor/action-sheet": "^6.0.0",
     "@capacitor/android": "^6.0.0",
     "@capacitor/cli": "^6.0.0",
@@ -11,14 +11,16 @@
     "@capacitor/device": "^6.0.0",
     "@capacitor/ios": "^6.0.0",
     "@capacitor/share": "^6.0.0",
-    "@ionic/react": "^8.1.1",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.3.1",
+    "react-awesome-slider": "^4.1.0",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.23.1",
     "react-scripts": "5.0.1",
+    "react-slick": "^0.30.2",
+    "swiper": "^11.1.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

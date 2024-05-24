@@ -1,12 +1,14 @@
 import logo from './logo.svg';
-import './App.css';
+//import './App.css'
 
-//import * as React from "react";
-import { useState } from 'react';
+import * as React from "react";
 import * as ReactDOM from "react-dom/client";
+
+import { useState } from 'react';
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 
+import Intro from './Intro';
 import Home from './Home';
 import About from './About';
 import Share from './ShareSheet';
@@ -18,17 +20,20 @@ function App() {
     const routes = [
         {
             path: '/',
-            element: <Home />,
+            element: <Intro />,
         },
         {
             path: '/about',
             element: <About />,
         },
         {
+          path: '/home',
+          element: <Home />,
+        },
+        {
           path: '/passkeys',
           element: <Passkeys />,
       }
-
     ];
     return <RouterProvider router={createBrowserRouter(routes)} />;
   };

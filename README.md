@@ -5,6 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Tweaking
 Sometime, you've got to fiddle with ... node_modules/@adamjbradley/capacitor-native-webauthn/capacitor-native-webauthn.podspec making sure it references the correct
 s.name AdamjbradleyCapacitorNativeWebauthn which is, in fact AdamjbradleyCapacitorNativeWebauthn.podspec which, amusingly, references itself
+Fix this!
 
 ## Available Scripts
 
